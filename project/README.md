@@ -17,9 +17,9 @@ Windows 전원 설정을 사용하므로 다양한 제조사의 노트북에서 
 
 | Windows 시스템 | 실행 파일 |
 | --- | --- |
-| Intel·AMD 64비트 | [Quiet_Session_Windows_x64.exe](dist/Quiet_Session_Windows_x64.exe) |
-| ARM64 | [Quiet_Session_Windows_ARM64.exe](dist/Quiet_Session_Windows_ARM64.exe) |
-| 32비트 | [Quiet_Session_Windows_x86.exe](dist/Quiet_Session_Windows_x86.exe) |
+| Intel·AMD 64비트 | [Quiet_Session_Windows_x64.exe](../Quiet_Session_Windows_x64.exe) |
+| ARM64 | [Quiet_Session_Windows_ARM64.exe](../Quiet_Session_Windows_ARM64.exe) |
+| 32비트 | [Quiet_Session_Windows_x86.exe](../Quiet_Session_Windows_x86.exe) |
 
 시스템 종류는 Windows **설정 → 시스템 → 정보 → 시스템 종류**에서 확인할 수 있습니다.
 
@@ -29,7 +29,7 @@ Windows 전원 설정을 사용하므로 다양한 제조사의 노트북에서 
 
 ## 소스에서 빌드
 
-Go 1.25 이상을 사용합니다. 다음은 PowerShell에서 x64용 EXE를 만드는 명령입니다. ARM64는 `GOARCH`를 `arm64`로, 32비트는 `386`으로 바꿉니다.
+Go 1.25 이상을 사용합니다. 저장소의 `project` 폴더에서 PowerShell을 열고 아래 명령으로 x64용 EXE를 빌드합니다. ARM64는 `GOARCH`를 `arm64`로, 32비트는 `386`으로 바꿉니다.
 
 ```powershell
 New-Item -ItemType Directory -Force build | Out-Null

@@ -6,9 +6,9 @@
 
 | 실행 파일 | SHA-256 | 재빌드 비교 |
 | --- | --- | --- |
-| [Quiet_Session_Windows_x64.exe](dist/Quiet_Session_Windows_x64.exe) | `cef3c453da3c252522d42ca093d23fa118cc0cb6c4c0e83d440520aff29b3986` | 바이트 단위 일치 |
-| [Quiet_Session_Windows_ARM64.exe](dist/Quiet_Session_Windows_ARM64.exe) | `5a9073eceb081bf7e7b8acd1a1cd09a7f20e3a99dd9ba5323a9a6172d6efade3` | 바이트 단위 일치 |
-| [Quiet_Session_Windows_x86.exe](dist/Quiet_Session_Windows_x86.exe) | `7b92a62699b5a1f35b045e35df011ebed0891c300bf7850b1a95502f6788e560` | 바이트 단위 일치 |
+| [Quiet_Session_Windows_x64.exe](../Quiet_Session_Windows_x64.exe) | `cef3c453da3c252522d42ca093d23fa118cc0cb6c4c0e83d440520aff29b3986` | 바이트 단위 일치 |
+| [Quiet_Session_Windows_ARM64.exe](../Quiet_Session_Windows_ARM64.exe) | `5a9073eceb081bf7e7b8acd1a1cd09a7f20e3a99dd9ba5323a9a6172d6efade3` | 바이트 단위 일치 |
+| [Quiet_Session_Windows_x86.exe](../Quiet_Session_Windows_x86.exe) | `7b92a62699b5a1f35b045e35df011ebed0891c300bf7850b1a95502f6788e560` | 바이트 단위 일치 |
 
 Go 1.25.5에서 README의 빌드 옵션을 사용했습니다. Windows 대상 아키텍처 `amd64`, `arm64`, `386`으로 각각 빌드한 결과가 해당 커밋에 포함된 EXE와 바이트 단위로 일치했습니다. `go test ./...`도 통과했습니다.
 

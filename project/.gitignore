@@ -221,8 +221,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-
-# Track the Windows builds distributed with Quiet Session.
-!/dist/
-/dist/*
-!/dist/Quiet_Session_Windows_*.exe
