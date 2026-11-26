@@ -18,9 +18,16 @@ Go 1.25.5에서 README의 빌드 옵션을 사용했습니다. Windows 대상 �
 Get-FileHash .\Quiet_Session_Windows_x64.exe -Algorithm SHA256
 ```
 
-## VirusTotal 검사 상태
+## VirusTotal 검사 결과
 
-사용자가 제공한 [VirusTotal 탐지 화면](docs/virustotal-detection.png)에 다음 탐지 3건이 표시됩니다. 화면 상단의 위협 분류는 `trojan.generic`입니다.
+[사용자가 제공한 VirusTotal 화면](docs/virustotal-detection.png)은 `Quiet_CPU_System-main.zip`을 검사한 결과입니다. 첨부된 ZIP에서 다음 정보를 확인했습니다.
+
+- ZIP SHA-256: `00afa66dc4e85e3db8ed474fecaa9d34a1360811793639d0ffd15647da658bfe`
+- ZIP 크기: 3,195,279바이트
+- ZIP에 기록된 GitHub 커밋: [`1d4a354`](https://github.com/FirstF1ame/Quiet_CPU_System/tree/1d4a35471facf6f64f9143e89e3de745226c8d3d)
+- ZIP 내부 14개 파일의 Git 블롭 해시와 크기가 해당 커밋과 모두 일치합니다. 내부 EXE 3종의 SHA-256은 위 표와 일치합니다.
+
+화면의 대표 위협 라벨은 `trojan.generic`이며, 다음 탐지 3건이 표시됩니다.
 
 | 탐지 엔진 | 표시 결과 |
 | --- | --- |
@@ -28,8 +35,8 @@ Get-FileHash .\Quiet_Session_Windows_x64.exe -Algorithm SHA256
 | Elastic | `Malicious (moderate Confidence)` |
 | McAfee Scanner | `Trojan:Win/GenericY.HVE` |
 
-Microsoft, Bitdefender, Kaspersky 등은 화면에서 `Undetected`로 표시됩니다. Arctic Wolf는 파일 형식을 처리하지 못했다고 표시합니다.
+Microsoft, Bitdefender, Kaspersky 등은 `Undetected`로 표시됩니다. Arctic Wolf는 파일 형식을 처리하지 못했다고 표시합니다. 제공된 화면에서는 검사일, 전체 엔진 수, 보고서의 SHA-256을 확인할 수 없습니다. 위 ZIP 해시는 첨부 파일에서 직접 계산한 값입니다.
 
-제공된 화면에는 **검사 파일의 SHA-256, 파일명, 전체 엔진 수, 검사일**이 보이지 않습니다. 따라서 어떤 아키텍처의 배포 EXE에 이 결과가 해당하는지 아직 확인되지 않았습니다. 위 재빌드 결과는 배포 파일과 공개 소스의 일치 여부를 검증한 기록입니다. 오탐 여부를 판단하려면 원본 보고서의 SHA-256을 위 표와 대조한 뒤 해당 파일의 분석 결과를 확인해야 합니다.
+ZIP 보고서만으로는 어떤 내부 파일이 탐지를 유발했는지, 또는 오탐인지 확인할 수 없습니다. 개별 EXE 결과는 VirusTotal의 **Relations → Bundled files**에서 파일별 SHA-256으로 확인하거나, EXE를 개별 검사해 확인할 수 있습니다.
 
-[공식 VirusTotal 해시 검색 안내](https://docs.virustotal.com/docs/searching) · [VirusTotal 탐지 결과 및 오탐 안내](https://docs.virustotal.com/docs/false-positive)
+[공식 VirusTotal 압축 파일 검사 안내](https://docs.virustotal.com/docs/compressed-files) · [탐지 결과 및 오탐 안내](https://docs.virustotal.com/docs/false-positive)
