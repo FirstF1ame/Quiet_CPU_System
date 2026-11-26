@@ -40,3 +40,14 @@ Microsoft, Bitdefender, Kaspersky 등은 `Undetected`로 표시됩니다. Arctic
 ZIP 보고서만으로는 어떤 내부 파일이 탐지를 유발했는지, 또는 오탐인지 확인할 수 없습니다. 개별 EXE 결과는 VirusTotal의 **Relations → Bundled files**에서 파일별 SHA-256으로 확인하거나, EXE를 개별 검사해 확인할 수 있습니다.
 
 [공식 VirusTotal 압축 파일 검사 안내](https://docs.virustotal.com/docs/compressed-files) · [탐지 결과 및 오탐 안내](https://docs.virustotal.com/docs/false-positive)
+
+### ARM64 실행 파일 개별 검사
+
+[Quiet_Session_Windows_ARM64.exe의 VirusTotal 보고서](https://www.virustotal.com/gui/file/5a9073eceb081bf7e7b8acd1a1cd09a7f20e3a99dd9ba5323a9a6172d6efade3/detection) 링크에 포함된 SHA-256은 위 표의 ARM64 배포본과 일치합니다.
+
+| 엔진 | 사용자가 확인한 결과 |
+| --- | --- |
+| Arctic Wolf | `Unsafe` |
+| Acronis (Static ML) | `Undetected` |
+
+위 판정은 사용자가 전달한 결과입니다. 이 기록을 작성할 때 보고서 화면을 직접 열어 전체 탐지 수나 검사 시각을 확인하지 못했습니다. 이 판정은 ARM64 EXE 개별 검사에 해당합니다. x64와 x86의 개별 보고서는 이 문서에 아직 연결되어 있지 않습니다.
