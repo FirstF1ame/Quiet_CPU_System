@@ -20,6 +20,16 @@ Get-FileHash .\Quiet_Session_Windows_x64.exe -Algorithm SHA256
 
 ## VirusTotal 검사 상태
 
-**미확인.** 이 검증 시점에는 VirusTotal 웹 업로드 화면에 접속하지 못해 검사 보고서와 탐지 수치를 확보하지 못했습니다. 위의 해시와 재빌드 결과는 배포 파일이 공개 소스와 일치한다는 증거입니다. 악성코드 검사 여부는 VirusTotal 보고서로 별도 확인해야 하며, 탐지 수치는 해당 시점에 사용된 엔진의 결과입니다.
+사용자가 제공한 [VirusTotal 탐지 화면](docs/virustotal-detection.png)에 다음 탐지 3건이 표시됩니다. 화면 상단의 위협 분류는 `trojan.generic`입니다.
 
-[공식 VirusTotal 해시 검색 안내](https://docs.virustotal.com/docs/searching)
+| 탐지 엔진 | 표시 결과 |
+| --- | --- |
+| Bkav Pro | `W32.Malware.C293072F` |
+| Elastic | `Malicious (moderate Confidence)` |
+| McAfee Scanner | `Trojan:Win/GenericY.HVE` |
+
+Microsoft, Bitdefender, Kaspersky 등은 화면에서 `Undetected`로 표시됩니다. Arctic Wolf는 파일 형식을 처리하지 못했다고 표시합니다.
+
+제공된 화면에는 **검사 파일의 SHA-256, 파일명, 전체 엔진 수, 검사일**이 보이지 않습니다. 따라서 어떤 아키텍처의 배포 EXE에 이 결과가 해당하는지 아직 확인되지 않았습니다. 위 재빌드 결과는 배포 파일과 공개 소스의 일치 여부를 검증한 기록입니다. 오탐 여부를 판단하려면 원본 보고서의 SHA-256을 위 표와 대조한 뒤 해당 파일의 분석 결과를 확인해야 합니다.
+
+[공식 VirusTotal 해시 검색 안내](https://docs.virustotal.com/docs/searching) · [VirusTotal 탐지 결과 및 오탐 안내](https://docs.virustotal.com/docs/false-positive)
