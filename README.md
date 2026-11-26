@@ -18,9 +18,9 @@ Windows 전원 설정을 사용하므로 다양한 제조사의 노트북에서 
 
 | 시스템 종류에 보이는 문구 | 어떤 컴퓨터인가요? | 받을 파일 |
 | --- | --- | --- |
-| **64비트 운영 체제**와 **x64 기반 프로세서** | 64비트 Windows를 쓰는 Intel 또는 AMD PC | [Quiet_Session_Windows_x64.exe](../Quiet_Session_Windows_x64.exe) |
-| **64비트 운영 체제**와 **ARM 기반 프로세서** | ARM 기반 Windows PC. 예를 들어 Snapdragon X를 탑재한 일부 노트북 | [Quiet_Session_Windows_ARM64.exe](../Quiet_Session_Windows_ARM64.exe) |
-| **32비트 운영 체제** | 32비트 Windows 10 PC. 뒤에 **x64 기반 프로세서**라고 써 있어도 이 행을 선택합니다. | [Quiet_Session_Windows_x86.exe](../Quiet_Session_Windows_x86.exe) |
+| **64비트 운영 체제**와 **x64 기반 프로세서** | 64비트 Windows를 쓰는 Intel 또는 AMD PC | [Quiet_Session_Windows_x64.exe](Quiet_Session_Windows_x64.exe) |
+| **64비트 운영 체제**와 **ARM 기반 프로세서** | ARM 기반 Windows PC. 예를 들어 Snapdragon X를 탑재한 일부 노트북 | [Quiet_Session_Windows_ARM64.exe](Quiet_Session_Windows_ARM64.exe) |
+| **32비트 운영 체제** | 32비트 Windows 10 PC. 뒤에 **x64 기반 프로세서**라고 써 있어도 이 행을 선택합니다. | [Quiet_Session_Windows_x86.exe](Quiet_Session_Windows_x86.exe) |
 
 **64비트**라고 표시되면 뒤에 나오는 **x64 기반** 또는 **ARM 기반** 문구까지 확인하세요.  
 [Microsoft의 Windows 시스템 종류 확인 안내](https://support.microsoft.com/en-us/windows/experience/compatibility/32-bit-and-64-bit-windows-frequently-asked-questions)
@@ -34,7 +34,7 @@ Windows 전원 설정을 사용하므로 다양한 제조사의 노트북에서 
 
 ## 실행 파일 검증
 
-[SHA-256 및 재빌드 검증 기록](BUILD_VERIFICATION.md)에서 배포 EXE 3종의 체크섬과 VirusTotal 검사 상태를 확인할 수 있습니다.
+[SHA-256 및 재빌드 검증 기록](project/BUILD_VERIFICATION.md)에서 배포 EXE 3종의 체크섬과 VirusTotal 검사 상태를 확인할 수 있습니다.
 
 ## 소스에서 빌드
 
